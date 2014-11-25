@@ -1,6 +1,170 @@
-html, body{
-	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-.top{
-	background-color: 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
+body {
+	line-height: 1;
+	font-family: 'Open Sans', Arial, sans serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1{
+	padding-top: 10px;
+	font-size: 2em;
+	font-family: 'Francois One', sans-serif;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 1em;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+h3{
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+hr{
+	width: 500px;
+}
+#container{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+}
+
+#wrap{
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#top{
+	padding: 40px  0 40px 0;
+	background-color: #E26A6A;
+	height: 200px;
+	text-align:  center;
+}
+
+#bottom{
+	background-color: #FFF;
+
+}
+
+#title{
+	color: #36d7b7;
+}
+
+/* -- input & btns -- */
+#tip-off{
+	text-align: center;
+}
+#add-items{
+	background: transparent;
+	color: #575757;
+	border-radius: 15px;
+	border: 2px solid 575757;
+	border-style: dashed;
+	height: 30px;
+	text-align: center;
+}
+#qty{
+	background: transparent;
+	color: #575757;
+	border-radius: 15px;
+	border: 2px solid 575757;
+	border-style: dashed;
+	height: 30px;
+	text-align: center;
+}
+#price{
+	background: transparent;
+	color: #575757;
+	border-radius: 15px;
+	border: 2px solid 575757;
+	border-style: dashed;
+	height: 30px;
+	text-align: center;
+}
+
+/* -- Entered Information -- */
+#list-area{
+	color: #000;
+	font-size: 1em;
+	padding-top: 60px;
+	text-align: center;
+}
+
+#list-area div{
+	display: inline-block;
+}
+#list-area #items{
+	text-align: left;
+	padding-right: 130px;
+}
+#list-area #quantity{
+	padding-right: 30px;
+}
+#list-area #cost{
+	text-align: right;
+}
+#list-area #first_total{
+	padding-left: 25px;
+	text-align: right;
+}
+.delete{
+	color: #000;
+	border: 1px solid #999;
+	height: 20px;
+	cursor: pointer;
+	margin-left: -60px;
+}
+/*
+.delete{
+	background: url('../img/x-mark.png');
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	float: left;
+}
+*/
+
+
+
