@@ -73,7 +73,6 @@ hr{
 	padding-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
 }
 
 #top{
@@ -104,67 +103,61 @@ hr{
 	border-style: dashed;
 	height: 30px;
 	text-align: center;
-}
-#qty{
-	background: transparent;
-	color: #575757;
-	border-radius: 15px;
-	border: 2px solid 575757;
-	border-style: dashed;
-	height: 30px;
-	text-align: center;
-}
-#price{
-	background: transparent;
-	color: #575757;
-	border-radius: 15px;
-	border: 2px solid 575757;
-	border-style: dashed;
-	height: 30px;
-	text-align: center;
+	display: inline-block;
 }
 
 /* -- Entered Information -- */
 #list-area{
-	color: #000;
-	font-size: 1em;
-	padding-top: 60px;
-	text-align: center;
+	padding-top: 50px;
 }
 
-#list-area div{
-	display: inline-block;
+
+p{
+	background-color: #909090;
+	border: none;
+	border-radius: 15px;
+	color: #fff;
+  display: inline-block;
+  font-size: 12pt;
+  height: 30px;
+  line-height: 24pt;
+  text-align: center;
+  width: 300px;
+  display: table;
+  margin: 15px auto;
+  padding: 0 15px;
+
 }
-#list-area #items{
-	text-align: left;
-	padding-right: 130px;
+
+.length{
+	width: 300px;
 }
-#list-area #quantity{
-	padding-right: 30px;
-}
-#list-area #cost{
-	text-align: right;
-}
-#list-area #first_total{
-	padding-left: 25px;
-	text-align: right;
-}
+
 .delete{
 	color: #000;
+	background-color: #33d7b9;
 	border: 1px solid #999;
 	height: 20px;
 	cursor: pointer;
-	margin-left: -60px;
-}
-/*
-.delete{
-	background: url('../img/x-mark.png');
-	width: 25px;
-	height: 25px;
-	cursor: pointer;
 	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
 }
-*/
+
+.strike{
+	color: #000;
+	background-color: #33d7b9;
+	border: 1px solid #999;
+	height: 20px;
+	cursor: pointer;
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.strike-through{
+	text-decoration: line-through;
+}
+
 
 
 

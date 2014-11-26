@@ -1,35 +1,45 @@
 $(document).ready(function(){
-	var xMark = '<button class="delete">Remove</button>';
+	var reMove = '<button class="delete">Remove</button>';
+	var doneMark = '<button class="strike">Done</button>';
 
+//When the user press enters
+	$('#tip-off').keyup(function(enter){
+		if(enter.keyCode == 13){
+			enter.preventDefault();
+			postList();
+		}
+	});
+
+//When the user clicks on the button
 	$('#add').click(function(){
 			postList();
 		
 	});
 
-	function postList(){
-		var sum = 0;
-		var grocery_list = $('#add-items').val();
-		var grocery_qty = +$('#qty').val();
-		var grocery_price = +$('#price').val();
-		var amount = grocery_price.toFixed(2);
-		var total = (grocery_qty * amount)
-
-		$('#shopping-item').append('<p>' + xMark + grocery_list + '</p>');
-		$('#shopping-qty').append('<p>' + grocery_qty + '</p>');
-		$('#shopping-price').append('<p>$' + amount + '</p>');
-		$('#first_total').append('<p>$' + total + '</p>');
-		$('#add-items').val('');
-		$('#qty').val('');
-		$('#price').val('');
-
-		this.each(function(){
-					sum += parseFloat(this.value);
-				});
-			$('#zen-total').html(sum.toFixed(2));
-		})
 		
-	}
 
+	function postList(){
+		var grocery_list = $('#add-items').val();
+		var list = $('<p class="length">' + reMove + grocery_list + doneMark + '</p>');
+
+		if(grocery_list == '' || grocery_list == null){
+			alert('Please fill in an item');
+		}else{
+			$('#list-area').prepend(list);
+			$('#add-items').val('');
+
+		}
+	}
+	
+		$(document).on('click', '.delete', function(){
+			$(this).closest('p').fadeOut('slow');
+		})
+
+		$(document).on('click', '.strike', function(){
+			$(this).closest('p').toggleClass('strike-through');
+			$(this).closest('p').fadeOut('slow');
+		})
 
 });
+
 
